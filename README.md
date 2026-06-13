@@ -8,7 +8,7 @@ This project demonstrates clean architecture, scalable structure, and modern fro
 
 ## 🌐 Live Demo
 
-- 🔗 Live URL: https://your-vercel-url.vercel.app  
+- 🔗 Live URL: (https://zoom-task.vercel.app/en/admin)
 - 🔗 GitHub Repository: https://github.com/mazenessam99/zoom-task  
 
 ---
@@ -173,7 +173,6 @@ src/
 
 ---
 
-## 📸 Screenshots
 
 ### 🔑 Login Page
 ![Login](public/readme/login.png)
