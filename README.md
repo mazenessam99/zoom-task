@@ -106,33 +106,36 @@ A pixel-perfect implementation based on the provided Figma design.
 
 A clean and scalable folder structure:
 src/
-├── app/
-│ ├── [locale]/
-│ ├── admin/
-│ └── login/
-│
-├── components/
-│ ├── ui/
-│ ├── admin/
-│ ├── admin/
-│ └── landing/
-│
-├── hooks/
-├── lib/
-│ ├── schemas/
-│ 
-├── hooks/
-│ ├── useaRedux/
-├── i18n/
-│   ├── messages/
-│   │ ├── ar.json/
-│   │ ├── en.json/
-│   │ ├── request.ts/
-│   │ ├── routing.ts/
-│ 
-├── store/
-├── middleware/
-└── types/
+app/
+[locale]/
+admin/
+login/
+
+components/
+ui/
+shared/
+admin/
+landing/
+
+hooks/
+useRedux/
+
+lib/
+schemas/
+helpers/
+
+i18n/
+messages/
+ar.json
+en.json
+request.ts
+routing.ts
+
+store/
+
+middleware/
+
+types/
 
 ---
 
