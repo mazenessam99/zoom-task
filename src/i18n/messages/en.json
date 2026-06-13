@@ -1,0 +1,92 @@
+{
+    "login": {
+        "title": "Welcome Back",
+        "subtitle": "Sign in to your account",
+        "email": "Email Address",
+        "emailPlaceholder": "Enter your email",
+        "password": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "submit": "Sign In",
+        "loading": "Signing in...",
+        "errors": {
+            "email": "Invalid email address",
+            "emailRequired": "Email is required",
+            "passwordRequired": "Password is required",
+            "passwordMin": "Password must be at least 6 characters",
+            "invalidCredentials": "Invalid email or password",
+            "generic": "Something went wrong. Please try again."
+        }
+    },
+    "admin": {
+        "title": "Admin Dashboard",
+        "welcome": "Welcome",
+        "fullName": "Full Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "userType": "User Type",
+        "logout": "Logout",
+        "loading": "Loading...",
+        "authority": "Authority",
+        "authorityValue": "Super Admin",
+        "status": "Status",
+        "statusValue": "Active",
+        "type": "Type",
+        "accountData": "Account Information",
+        "logoutSuccess": "Logged out successfully",
+        "errorTitle": "Failed to load data",
+        "errorSubtitle": "An error occurred while connecting to the server",
+        "backToLogin": "Back to Login"
+    },
+    "landing": {
+        "nav": {
+            "home": "Home",
+            "services": "Services",
+            "about": "About Us",
+            "blog": "Blog",
+            "contact": "Contact"
+        },
+        "hero": {
+            "title": "Your Leading Provider of Cleaning Services",
+            "subtitle": "We strive to understand what you're going through, what you need, what your price tags are, and what other means are available.",
+            "cta": "Request Service",
+            "contact": "Contact Us",
+            "stats": "Million satisfied customers, one goal: Wellbeing",
+            "badge1":"Wellness cleaning",
+            "badge2":"experienced hand"
+        },
+        "services": {
+            "title": "Offering the Most Effective Cleaning Solutions",
+            "subtitle": "We are happy to help you keep your clothes fresh and clean. We are available 24/7 for questions, requests or suggestions.",
+            "items": {
+                "window": {
+                    "title": "Professional Window Cleaning Services",
+                    "desc": "Improve your space with our eco-friendly window cleaning for a clear view."
+                },
+                "household": {
+                    "title": "Household Cleaning Solutions",
+                    "desc": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+                },
+                "moving": {
+                    "title": "Moving Cleaning Services",
+                    "desc": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+                },
+                "property": {
+                    "title": "Property Maintenance Services",
+                    "desc": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+                },
+                "maintenance": {
+                    "title": "Regular Care and Maintenance Services",
+                    "desc": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+                }
+            }
+        },
+        "wellness": {
+            "tag": "Wellness Cleaning",
+            "experience": "Experienced Hand"
+        }
+    },
+    "common": {
+        "logout": "Logout",
+        "loading": "Loading..."
+    }
+}
