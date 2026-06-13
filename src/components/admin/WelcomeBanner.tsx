@@ -20,7 +20,7 @@ export default function WelcomeBanner({
             <div className="absolute bottom-0 right-24 w-32 h-32 bg-[#5BA4C8]/10 rounded-full translate-y-1/2" />
 
             <div className="relative z-10 flex items-center gap-5">
-                <div className="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-2xl font-black flex-shrink-0">
+                <div className="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-2xl font-black shrink-0">
                     {initials}
                 </div>
                 <div>

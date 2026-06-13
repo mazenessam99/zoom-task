@@ -43,7 +43,7 @@ export const LoginForm = () => {
             Cookies.set('refreshToken', refreshToken, { expires: 7 });
             Cookies.set('userType', user.userType, { expires: 1 });
 
-            toast.success(`مرحباً ${user.fullName}!`);
+            toast.success(`Hello ${user.fullName}!`);
 
             if (user.userType === 'SUPER_ADMIN') {
                 router.replace(`/${locale}/admin`);
@@ -61,7 +61,7 @@ export const LoginForm = () => {
                 setError('password', { message: msg });
                 toast.error(msg);
             } else if (status === 422) {
-                toast.error('تحقق من البيانات المدخلة');
+                toast.error('chech your info');
             } else {
                 toast.error(t('errors.generic'));
             }

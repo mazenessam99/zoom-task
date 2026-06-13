@@ -12,7 +12,7 @@ export default function ServiceCard({
     description,
 }: ServiceCardProps) {
     return (
-        <div className="bg-[#F5F8FA] rounded-[32px] lg:rounded-xl p-[24px] lg:p-[40px] min-h-0 lg:min-h-[296px] transition-all duration-300 hover:-translate-y-2">
+        <div className="bg-[#F5F8FA] rounded-4xl lg:rounded-xl p-6 lg:p-10 min-h-0 lg:min-h-74 transition-all duration-300 hover:-translate-y-2">
             <Image
                 src={icon}
                 alt={title}
@@ -20,8 +20,8 @@ export default function ServiceCard({
                 height={48}
             />
 
-            <div className="mt-[24px] lg:mt-[32px]">
-                <h5 className="text-[24px] font-bold text-[#161A1E] h-[58px] mb-[16px] lg:mb-[24px]">
+            <div className="mt-6 lg:mt-8">
+                <h5 className="text-[24px] font-bold text-[#161A1E] h-14.5 mb-4 lg:mb-6">
                     {title}
                 </h5>
 

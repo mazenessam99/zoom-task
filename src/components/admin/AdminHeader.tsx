@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+
 import { Crown, LogOut } from 'lucide-react';
 
 import { useLocale } from 'next-intl';
@@ -59,7 +59,7 @@ export default function AdminHeader({
 
                     {/* User */}
                     <div className="flex items-center gap-2.5">
-                        <div className="w-8 h-8 rounded-full bg-[#5BA4C8] flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+                        <div className="w-8 h-8 rounded-full bg-[#5BA4C8] flex items-center justify-center text-white text-xs font-bold shrink-0">
                             {initials}
                         </div>
                         <div className="hidden sm:block">

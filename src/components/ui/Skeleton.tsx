@@ -35,7 +35,7 @@ export const LandingSkeleton = () => (
                 </div>
             </div>
         </div>
-        <div className="h-[500px] bg-gray-100 mx-6 mt-6 rounded-3xl" />
+        <div className="h-125 bg-gray-100 mx-6 mt-6 rounded-3xl" />
         <div className="max-w-7xl mx-auto px-6 mt-16 grid grid-cols-3 gap-6">
             {[...Array(6)].map((_, i) => <Skeleton key={i} className="h-32" />)}
         </div>
