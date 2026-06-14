@@ -50,7 +50,7 @@ export const baseQueryWithReauth: BaseQueryFn<
           const response = refreshResult.data as {
             data: { accessToken: string; refreshToken: string }
           };
-          const { accessToken, refreshToken } = response.data; // ← أضف .data
+          const { accessToken, refreshToken } = response.data; 
           const user = (api.getState() as RootState).auth.user;
           api.dispatch(setCredentials({ accessToken, refreshToken, user: user! }));
           result = await rawBaseQuery(args, api, extraOptions);

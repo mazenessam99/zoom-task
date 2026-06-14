@@ -47,42 +47,62 @@
         },
         "hero": {
             "title": "Your Leading Provider of Cleaning Services",
-            "subtitle": "We strive to understand what you're going through, what you need, what your price tags are, and what other means are available.",
+            "subtitle": "We aim to understand your needs and deliver the best cleaning solutions tailored for you.",
             "cta": "Request Service",
             "contact": "Contact Us",
-            "stats": "Million satisfied customers, one goal: Wellbeing",
-            "badge1":"Wellness cleaning",
-            "badge2":"experienced hand"
+            "stats": "Millions of satisfied customers, one goal: well-being",
+            "badge1": "Wellness Cleaning",
+            "badge2": "Experienced Hand"
         },
         "services": {
             "title": "Offering the Most Effective Cleaning Solutions",
-            "subtitle": "We are happy to help you keep your clothes fresh and clean. We are available 24/7 for questions, requests or suggestions.",
+            "subtitle": "We are happy to help you keep your space clean and fresh. Available 24/7 for support and requests.",
             "items": {
                 "window": {
                     "title": "Professional Window Cleaning Services",
-                    "desc": "Improve your space with our eco-friendly window cleaning for a clear view."
+                    "desc": "Eco-friendly window cleaning for a crystal-clear view and brighter spaces."
                 },
                 "household": {
                     "title": "Household Cleaning Solutions",
-                    "desc": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+                    "desc": "Complete home cleaning services using modern and safe techniques."
                 },
                 "moving": {
                     "title": "Moving Cleaning Services",
-                    "desc": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+                    "desc": "Thorough cleaning before and after moving to ensure a fresh start."
                 },
                 "property": {
                     "title": "Property Maintenance Services",
-                    "desc": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+                    "desc": "Keeping your property in top condition all year round."
                 },
                 "maintenance": {
                     "title": "Regular Care and Maintenance Services",
-                    "desc": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+                    "desc": "Scheduled maintenance programs tailored to your needs."
                 }
             }
         },
         "wellness": {
             "tag": "Wellness Cleaning",
             "experience": "Experienced Hand"
+        },
+        "footer": {
+            "description": "Professional cleaning services for homes and businesses. We provide reliable, high-quality cleaning solutions.",
+            "quickLinks": "Quick Links",
+            "ourServices": "Our Services",
+            "contactUs": "Contact Us",
+            "houseCleaning": "House Cleaning",
+            "officeCleaning": "Office Cleaning",
+            "deepCleaning": "Deep Cleaning",
+            "moveCleaning": "Move In / Move Out",
+            "address": "📍 Switzerland",
+            "phone": "+41 00 000 0000",
+            "email": "info@zoomcleaning.com",
+            "rights": "All rights reserved.",
+            "nav": {
+                "home": "Home",
+                "services": "Services",
+                "about": "About Us",
+                "contact": "Contact"
+            }
         }
     },
     "common": {

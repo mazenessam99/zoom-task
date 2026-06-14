@@ -14,12 +14,15 @@ export default function Navbar() {
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     const isRTL = locale === "ar";
 
     const toggleLocale = () => {
-        router.replace(pathname, { locale: isRTL ? "en" : "ar" });
+        router.replace(pathname, {
+            locale: isRTL ? "en" : "ar",
+        });
     };
 
     const links = [
@@ -34,23 +37,22 @@ export default function Navbar() {
         path === "/" ? pathname === "/" : pathname.startsWith(path);
 
     return (
-        <nav className="w-full bg-white/ shadow-sm backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
-
-            {/* ===== WRAPPER ===== */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-                <div className="flex items-center justify-between h-20" dir={isRTL ? "rtl" : "ltr"}>
-
+        <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/90 backdrop-blur-lg shadow-sm">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-4.5">
+                <div
+                    className="flex h-24 items-center justify-between"
+                    dir={isRTL ? "rtl" : "ltr"}
+                >
                     {/* ===== LOGO ===== */}
-                    <div className="flex justify-center items-center -px-12" >
+                    <div className="flex items-center shrink-0">
                         <Link href="/" className="flex items-center">
                             <Image
                                 src="/images/nav/logo.png"
-                                alt="logo"
-                                width={300}
-                                height={100}
-                                className="w-30 sm:w-35 md:w-42.5 lg:w-50 xl:w-60 h-auto object-contain"
+                                alt="ZOOM Cleaning"
+                                width={350}
+                                height={120}
                                 priority
+                                className="w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72 h-auto object-contain"
                             />
                         </Link>
                     </div>
@@ -68,28 +70,41 @@ export default function Navbar() {
                             </NavLink>
                         ))}
 
-                        <div className="flex gap-3">
-                            <LangButton locale={locale} onToggle={toggleLocale} />
+                        <div className="flex items-center gap-3">
+                            <LangButton
+                                locale={locale}
+                                onToggle={toggleLocale}
+                            />
+
                             <LogoutButton />
                         </div>
                     </div>
 
-                    {/* ===== BURGER ===== */}
+                    {/* ===== MOBILE MENU BUTTON ===== */}
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
-                        className="lg:hidden flex items-center justify-center w-10 h-10"
+                        className="flex h-10 w-10 items-center justify-center lg:hidden"
+                        aria-label="Toggle menu"
                     >
                         <HamburgerIcon open={menuOpen} />
                     </button>
-
                 </div>
 
                 {/* ===== MOBILE MENU ===== */}
-                {menuOpen && (
-                    <div className="lg:hidden flex flex-col gap-2 pb-4" dir={isRTL ? "rtl" : "ltr"}>
-
+                <div
+                    className={`overflow-hidden transition-all duration-300 lg:hidden ${
+                        menuOpen
+                            ? "max-h-[500px] opacity-100"
+                            : "max-h-0 opacity-0"
+                    }`}
+                    dir={isRTL ? "rtl" : "ltr"}
+                >
+                    <div className="flex flex-col gap-2 pb-4">
                         {links.map((link) => (
-                            <div key={link.path} className="py-3 border-b">
+                            <div
+                                key={link.path}
+                                className="border-b border-gray-100 py-3"
+                            >
                                 <NavLink
                                     href={link.path}
                                     active={isActive(link.path)}
@@ -101,14 +116,16 @@ export default function Navbar() {
                             </div>
                         ))}
 
-                        <div className="pt-3 flex gap-3">
-                            <LangButton locale={locale} onToggle={toggleLocale} />
+                        <div className="flex gap-3 pt-4">
+                            <LangButton
+                                locale={locale}
+                                onToggle={toggleLocale}
+                            />
+
                             <LogoutButton />
                         </div>
-
                     </div>
-                )}
-
+                </div>
             </div>
         </nav>
     );

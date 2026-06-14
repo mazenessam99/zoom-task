@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Providers } from '@/components/Providers';
 import { DirectionHandler } from './direction-handler';
+import BackToTopButton from '@/components/ui/BackToTopButton';
 
 
 export default async function LocaleLayout({
@@ -26,6 +27,7 @@ export default async function LocaleLayout({
       <DirectionHandler locale={locale}>
         <Providers>
           {children}
+          <BackToTopButton/>
         </Providers>
       </DirectionHandler>
     </NextIntlClientProvider>
