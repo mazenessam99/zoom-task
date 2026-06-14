@@ -2,6 +2,7 @@
 
 import React, { forwardRef, useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
+import { ImWarning } from 'react-icons/im';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -31,7 +32,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             ref={ref}
             type={isPassword && showPassword ? 'text' : type}
             className={`
-              w-full rounded-xl border px-4 py-3 text-sm
+              w-full rounded-xl border px-4 py-3 text-sm text-gray-600
               transition-all duration-200 outline-none
               placeholder:text-gray-400
               ${icon ? 'pl-10' : ''}
@@ -57,7 +58,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         </div>
         {error && (
           <p className="text-xs text-red-500 flex items-center gap-1">
-            <span>⚠</span> {error}
+            <span><ImWarning/></span> {error}
           </p>
         )}
       </div>

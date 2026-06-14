@@ -10,7 +10,7 @@ export default function LangButton({ locale, onToggle, className = "" }: LangBut
     return (
         <button
             onClick={onToggle}
-            className={`flex items-center justify-center gap-2 px-3 py-1 border rounded-md hover:bg-gray-100 transition ${className}`}
+            className={`flex items-center justify-center gap-2 px-3 py-1 border rounded-md cursor-pointer hover:bg-gray-100 transition ${className}`}
         >
             <Image
                 src={locale === "en" ? "/flags/eg.png" : "/flags/us.jpg"}

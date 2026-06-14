@@ -14,15 +14,15 @@ export default function ServicesSection() {
                 {/* HEADER */}
                 <header className="flex flex-col lg:flex-row lg:items-start lg:gap-20">
 
-    <p className="font-bold text-[#04090D] text-[24px] md:text-[32px] lg:text-[40px] leading-[1.1] tracking-[-0.02em] lg:max-w-137">
-        {t("title")}
-    </p>
+                    <p className="font-bold text-[#04090D] text-[24px] md:text-[32px] lg:text-[40px] leading-[1.1] tracking-[-0.02em] lg:max-w-137">
+                        {t("title")}
+                    </p>
 
-    <p className="font-normal text-[#161A1E] text-[16px] leading-[1.6] lg:max-w-127.5 mt-2 md:mt-3 lg:mt-0 text-start">
-        {t("subtitle")}
-    </p>
+                    <p className="font-normal text-[#161A1E] text-[16px] leading-[1.6] lg:max-w-127.5 mt-2 md:mt-3 lg:mt-0 text-start">
+                        {t("subtitle")}
+                    </p>
 
-</header>
+                </header>
 
                 {/* TOP CARDS */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-7.5 mt-12">

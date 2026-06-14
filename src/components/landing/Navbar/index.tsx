@@ -68,8 +68,10 @@ export default function Navbar() {
                             </NavLink>
                         ))}
 
-                        <LangButton locale={locale} onToggle={toggleLocale} />
-                        <LogoutButton />
+                        <div className="flex gap-3">
+                            <LangButton locale={locale} onToggle={toggleLocale} />
+                            <LogoutButton />
+                        </div>
                     </div>
 
                     {/* ===== BURGER ===== */}

@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
 import { useDispatch } from 'react-redux';
 import { logout } from '@/store/authSlice';
+import { LogOut } from 'lucide-react';
 
 export default function LogoutButton() {
   const router = useRouter();
@@ -20,11 +21,16 @@ export default function LogoutButton() {
   };
 
   return (
+
     <button
       onClick={handleLogout}
-      className="bg-white text-black px-4 py-2 rounded-lg"
+
+      className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-red-500 cursor-pointer transition-colors disabled:opacity-50"
     >
-      Logout
+      <LogOut size={15} />
+      <span className="hidden sm:inline">
+        Logout
+      </span>
     </button>
   );
 }
