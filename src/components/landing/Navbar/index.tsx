@@ -38,7 +38,7 @@ export default function Navbar() {
 
     return (
         <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/90 backdrop-blur-lg shadow-sm">
-            <div className="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-12">
+            <div className="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-12 xl:px-0">
                 <div
                     className="
                         flex items-center justify-between
@@ -59,7 +59,7 @@ export default function Navbar() {
                                     w-[110px]
                                     md:w-[130px]
                                     lg:w-[150px]
-                                    xl:w-[160px]
+                                    xl:w-[130px]
                                     h-auto object-contain
                                 "
                             />
