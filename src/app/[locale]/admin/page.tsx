@@ -29,7 +29,7 @@ export default function AdminPage() {
     const handleLogout = async () => {
         try {
             if (refreshToken) await logoutMutation({ refreshToken }).unwrap();
-        } catch {  } finally {
+        } catch { } finally {
             dispatch(logout());
             Cookies.remove('accessToken');
             Cookies.remove('refreshToken');
@@ -89,9 +89,9 @@ export default function AdminPage() {
                 />
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <StatCard icon={<Crown size={18} />} label={t('authority')} value={t('authorityValue')} color="bg-purple-50 text-purple-500" />
-                    <StatCard icon={<Activity size={18} />} label={t('status')} value={t('statusValue')} color="bg-green-50 text-green-500" />
-                    <StatCard icon={<Settings size={18} />} label={t('type')} value={user.userType} color="bg-blue-50 text-blue-500" />
+                    <StatCard icon={<Crown size={18} />} label={t('authority')} value={t('authorityValue')} color="bg-purple-50 text-purple-500" borderColor="#a855f7" />
+                    <StatCard icon={<Activity size={18} />} label={t('status')} value={t('statusValue')} color="bg-green-50 text-green-500" borderColor="#22c55e" />
+                    <StatCard icon={<Settings size={18} />} label={t('type')} value={user.userType} color="bg-blue-50 text-blue-500" borderColor="#3b82f6" />
                 </div>
 
                 <ProfileInfo

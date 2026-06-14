@@ -53,7 +53,7 @@ export default function AdminHeader({
                 <div className="flex items-center gap-3">
 
                     {/* Lang */}
-                    <LangButton locale={locale} onToggle={toggleLocale} />
+                    <LangButton className='cursor-pointer' locale={locale} onToggle={toggleLocale} />
 
                     <div className="w-px h-6 bg-gray-100" />
 
@@ -74,7 +74,7 @@ export default function AdminHeader({
                     <button
                         onClick={onLogout}
                         disabled={isLoggingOut}
-                        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-red-500 transition-colors disabled:opacity-50"
+                        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-red-500 cursor-pointer transition-colors disabled:opacity-50"
                     >
                         <LogOut size={15} />
                         <span className="hidden sm:inline">

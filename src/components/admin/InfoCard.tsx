@@ -12,7 +12,7 @@ export default function InfoCard({ icon, label, value, accent = false }: InfoCar
         <div className={`flex items-center gap-4 p-5 rounded-2xl border transition-all duration-200 hover:shadow-sm cursor-pointer ${
             accent
                 ? 'bg-[#EBF4FA] border-[#5BA4C8]/30'
-                : 'bg-white border-gray-100 hover:border-gray-200'
+                : 'bg-white border-gray-100 hover:border-[#5BA4C8]'
         }`}>
             <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
                 accent ? 'bg-[#5BA4C8] text-white' : 'bg-gray-50 text-gray-400'

@@ -34,13 +34,13 @@ export default function HeroSection() {
                                 {t("contact")}
                             </button>
                         </div>
-                        <div className="absolute bottom-0 right-0">
+                        <div className="absolute bottom-11 right-1 md:bottom-0 md:right-0">
                             <Image src={'/images/hero/Vector 1.png'} width={116.12} height={65.4} alt="n-icon" />
                         </div>
                     </div>
                 </div>
 
-                <div className="relative w-full overflow-hidden rounded-4xl bg-[#8BA9C5] h-87.5 sm:h-112.5 lg:absolute lg:bottom-0 lg:right-0 lg:w-[70%] lg:h-full lg:bg-transparent lg:z-20">
+                <div className="relative w-full mt-4 overflow-hidden rounded-4xl bg-[#8BA9C5] h-87.5 sm:h-112.5 lg:absolute lg:bottom-0 lg:right-0 lg:w-[70%] lg:h-full lg:bg-transparent lg:z-20">
                     <Image
                         src="/images/hero/hero.png"
                         alt="Hero Image"
@@ -85,7 +85,7 @@ export default function HeroSection() {
 
                 {/* Stats */}
                 <div
-                    className="relative lg:absolute lg:bottom-0 lg:left-10 lg:z-10 w-full lg:w-[30%] bg-white lg:rounded-tr-4xl flex items-center gap-6 px-8 py-6"
+                    className="relative lg:absolute lg:bottom-0  lg:left-10 lg:z-10 w-full lg:w-[30%] bg-white lg:rounded-tr-4xl flex items-center gap-6 px-8 py-6"
                     style={{ transform: isRTL ? 'scaleX(-1)' : 'none' }}
                 >
                     <p className="text-4xl font-bold text-black">58k+</p>

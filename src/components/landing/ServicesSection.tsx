@@ -8,7 +8,7 @@ export default function ServicesSection() {
     const t = useTranslations("landing.services");
 
     return (
-        <section className="w-full px-4 md:px-8 lg:px-33.75 py-8 lg:py-20">
+        <section className="w-full px-4 md:px-8 lg:px-33.75 py-10 md:py-0 ">
             <div className="w-full max-w-292.5 mx-auto">
 
                 {/* HEADER */}

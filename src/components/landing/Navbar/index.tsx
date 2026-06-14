@@ -34,7 +34,7 @@ export default function Navbar() {
         path === "/" ? pathname === "/" : pathname.startsWith(path);
 
     return (
-        <nav className="w-full bg-white/70 backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
+        <nav className="w-full bg-white/ shadow-sm backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
 
             {/* ===== WRAPPER ===== */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
