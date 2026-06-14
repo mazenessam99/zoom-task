@@ -142,11 +142,11 @@ export default function Footer() {
                         </p>
 
                         <div className="flex items-center gap-6">
-                            <button className="transition-colors hover:text-cyan-600">
+                            <button className="transition-colors cursor-pointer hover:text-cyan-600">
                                 Privacy Policy
                             </button>
 
-                            <button className="transition-colors hover:text-cyan-600">
+                            <button className="transition-colors cursor-pointer hover:text-cyan-600">
                                 Terms of Service
                             </button>
                         </div>
