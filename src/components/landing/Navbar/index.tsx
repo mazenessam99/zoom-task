@@ -38,27 +38,39 @@ export default function Navbar() {
 
     return (
         <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/90 backdrop-blur-lg shadow-sm">
-            <div className="max-w-[1440px] mx-auto px-4 md:px-4.5">
+            <div className="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-12">
                 <div
-                    className="flex h-24 items-center justify-between"
+                    className="
+                        flex items-center justify-between
+                        h-20 md:h-24
+                    "
                     dir={isRTL ? "rtl" : "ltr"}
                 >
-                    {/* ===== LOGO ===== */}
+                    {/* LOGO */}
                     <div className="flex items-center shrink-0">
                         <Link href="/" className="flex items-center">
                             <Image
-                                src="/images/nav/logo.png"
+                                src="/images/logo.png"
                                 alt="ZOOM Cleaning"
-                                width={350}
-                                height={120}
+                                width={180}
+                                height={70}
                                 priority
-                                className="w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72 h-auto object-contain"
+                                className="
+                                    w-[110px]
+                                    md:w-[130px]
+                                    lg:w-[150px]
+                                    xl:w-[160px]
+                                    h-auto object-contain
+                                "
                             />
                         </Link>
                     </div>
 
-                    {/* ===== DESKTOP LINKS ===== */}
-                    <div className="hidden lg:flex items-center gap-6 xl:gap-10">
+                    {/* DESKTOP NAV */}
+                    <div className="
+                        hidden lg:flex items-center
+                        gap-4 xl:gap-8
+                    ">
                         {links.map((link) => (
                             <NavLink
                                 key={link.path}
@@ -71,40 +83,31 @@ export default function Navbar() {
                         ))}
 
                         <div className="flex items-center gap-3">
-                            <LangButton
-                                locale={locale}
-                                onToggle={toggleLocale}
-                            />
-
+                            <LangButton locale={locale} onToggle={toggleLocale} />
                             <LogoutButton />
                         </div>
                     </div>
 
-                    {/* ===== MOBILE MENU BUTTON ===== */}
+                    {/* MOBILE BUTTON */}
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
-                        className="flex h-10 w-10 items-center justify-center lg:hidden"
-                        aria-label="Toggle menu"
+                        className="lg:hidden flex h-10 w-10 items-center justify-center"
                     >
                         <HamburgerIcon open={menuOpen} />
                     </button>
+
                 </div>
 
-                {/* ===== MOBILE MENU ===== */}
-                <div
-                    className={`overflow-hidden transition-all duration-300 lg:hidden ${
-                        menuOpen
-                            ? "max-h-[500px] opacity-100"
-                            : "max-h-0 opacity-0"
-                    }`}
-                    dir={isRTL ? "rtl" : "ltr"}
-                >
+                {/* MOBILE MENU */}
+                <div className={`
+                    lg:hidden overflow-hidden transition-all duration-300
+                    ${menuOpen ? "max-h-[500px] opacity-100 mt-2" : "max-h-0 opacity-0"}
+                `}>
+
                     <div className="flex flex-col gap-2 pb-4">
+
                         {links.map((link) => (
-                            <div
-                                key={link.path}
-                                className="border-b border-gray-100 py-3"
-                            >
+                            <div key={link.path} className="border-b py-3">
                                 <NavLink
                                     href={link.path}
                                     active={isActive(link.path)}
@@ -117,15 +120,13 @@ export default function Navbar() {
                         ))}
 
                         <div className="flex gap-3 pt-4">
-                            <LangButton
-                                locale={locale}
-                                onToggle={toggleLocale}
-                            />
-
+                            <LangButton locale={locale} onToggle={toggleLocale} />
                             <LogoutButton />
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </nav>
     );

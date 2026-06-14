@@ -8,7 +8,7 @@ export default function HeroSection() {
     const isRTL = locale === 'ar';
 
     return (
-        <section className="min-h-screen px-4 md:px-4.5 relative">
+        <section className="pb-5 md:pb-10 px-4 md:px-4.5 relative">
             <div
                 className="relative bg-none lg:bg-[url('/images/Rectangle.png')] bg-cover bg-center mt-8 overflow-hidden rounded-4xl lg:h-178.75"
                 style={{ transform: isRTL ? 'scaleX(-1)' : 'none' }}
